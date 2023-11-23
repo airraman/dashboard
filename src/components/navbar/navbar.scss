@@ -16,16 +16,26 @@
             align-items: center;
             border: .5px solid grey;
             padding: 3px;
+            width: 20vw;
+            margin-left: 5px;
+
+            .searchinput{
+                width: 50vw;
+            }
         }
 
         .items{ 
             display: flex;
             align-items: center;
+            
 
             .item{
                 display: flex;
                 align-items: center;
                 margin-right: 20px;
+                -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+                box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+                border-radius: 10px;
 
                 .avatar{
                     width: 30px;

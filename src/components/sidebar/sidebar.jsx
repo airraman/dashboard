@@ -1,7 +1,5 @@
 import React from 'react'
 import './sidebar.scss'
-
-
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import PermIdentityOutlinedIcon from '@mui/icons-material/PermIdentityOutlined';
 import RedeemIcon from '@mui/icons-material/Redeem';
@@ -20,7 +18,7 @@ const sidebar = () => {
   return (
     <div className='sidebar'>
         <div className="top">
-            <span className="logo">admin</span>
+            <span className="logo">ADMIN</span>
         </div>
         <hr/>
         <div className="center">
@@ -33,50 +31,50 @@ const sidebar = () => {
                 <p className="title">LISTS</p>
                 <li>
                     <PermIdentityOutlinedIcon className='icon'/>
-                    <span>Users</span>
+                    <span >Users</span>
                 </li>
                 <li>
                     <RedeemIcon className='icon' />
-                    <span>Products</span>
+                    <span >Products</span>
                 </li>
                 <li>
                     <MailIcon className='icon'/>
-                    <span>Orders</span>
+                    <span >Orders</span>
                 </li>
                 <li>
                     <CheckBoxIcon className='icon' />
-                    <span>Delivery</span>
+                    <span >Delivery</span>
                 </li>
                 <p className="title">USEFUL</p>
                 <li>
                     <PercentIcon className='icon' />
-                    <span>Stats</span>
+                    <span >Stats</span>
                 </li>
                 <li>
                     <CircleNotificationsIcon className='icon' />
-                    <span>Notifications</span>
+                    <span >Notifications</span>
                 </li>
                 <p className="title">SERVICE</p>
                 <li>
                     <RecommendIcon className='icon' />
-                    <span>System Health</span>
+                    <span >System Health</span>
                 </li>
                 <li>
                     <EventNoteIcon className='icon' />
-                    <span>Logs</span>
+                    <span >Logs</span>
                 </li>
                 <li>
                     <SettingsIcon className='icon' />
-                    <span>Settings</span>
+                    <span >Settings</span>
                 </li>
                 <p className="title">USER</p>
                 <li>
                     <AccountBoxIcon className='icon' />
-                    <span>Profile</span>
+                    <span >Profile</span>
                 </li>
                 <li>
                     <LogoutIcon className='icon' />
-                    <span>Log Out</span>
+                    <span >Log Out</span>
                 </li>
             </ul>
         </div>
