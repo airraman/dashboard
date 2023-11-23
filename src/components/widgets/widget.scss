@@ -8,6 +8,12 @@
     border-radius: 10px;
     height: 100px;
 
+    &:hover {
+        background-color: #add8e6;
+        transform: scale(1.025);
+        color: #020708;
+      }
+
 
     .left, .right{
         display: flex;
@@ -17,7 +23,7 @@
         .title{
             font-weight: bold;
             font-size: 14px;
-            color: lightblue;
+            color: #e6bbad;
         }
 
         .counter{
@@ -35,6 +41,23 @@
         .percentage{
             display: flex;
             align-items: center;
+            font-size: 14;
+
+            &.positive{
+                color: green;
+            }
+
+            &.negative{
+                color: red;
+            }
+        }
+
+        .icon{
+            font-size: 18;
+            padding: 5px;
+            background-color: rgba(128, 0, 128, 0.355);
+            border-radius: 5px;
+            align-self: flex-end;
         }
     }
 }
