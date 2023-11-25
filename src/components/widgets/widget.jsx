@@ -8,7 +8,6 @@ import AccountBoxIcon from '@mui/icons-material/AccountBox';
 
 
 const Widget = ({type}) => {
-
   let data; 
 
   const amount = 100
@@ -17,40 +16,44 @@ const Widget = ({type}) => {
   switch(type){
     case "user":
       data = {
-        title:"USERS",
+        title: "USERS",
         isMoney:false,
         link: "See all users",
-        icon:
-          <PermIdentityOutlinedIcon className='icon'/>,
+        icon:(
+          <PermIdentityOutlinedIcon className='icon'/>
+        )
       }
       break;
       case "order":
         data = {
-          title:"ORDERS",
+          title: "ORDERS",
           isMoney:false,
           link: "View all orders",
-          icon:
-            <RedeemIcon className='icon'/>,
+          icon:(
+            <RedeemIcon className='icon'/>
+          )
+        }
+      break;
+      case "earning":
+        data = {
+          title: "EARNINGS",
+          isMoney:true,
+          link: "View net earings",
+          icon:(
+            <AccountBoxIcon className='icon'/>
+          )
         }
         break;
-        case "earnings":
+        case "balance":
           data = {
-            title:"EARNINGS",
+            title:"BALANCE",
             isMoney:true,
-            link: "View net earings",
-            icon:
-              <AccountBoxIcon className='icon'/>,
-          }
-          break;
-          case "balance":
-            data = {
-              title:"BALANCE",
-              isMoney:false,
-              link: "See details",
-              icon:
-                <PercentIcon className='icon'/>,
+            link: "See details",
+            icon:(
+            <PercentIcon className='icon'/>
+            )
             }
-            break;
+      break;
       default:
       break;
   }
@@ -59,16 +62,17 @@ const Widget = ({type}) => {
     <div className='widget'>
       <div className='left'>
         <span className='title'>{data.title}</span>
-        <span className='counter'>{data.isMoney && "$"}{amount}</span>
-        <span className='link'>See all users</span>
+        <span className='counter'>
+          {data.isMoney && "$"}{amount}
+        </span>
+        <span className='link'>{data.link}</span>
       </div>
       <div className='right'>
         <div className='percentage positive'>
         <ArrowUpwardIcon />
-          20%
-
+          {diff}%
         </div>
-        <PermIdentityOutlinedIcon className='icon'/>
+        {data.icon}
       </div>
     </div>
   )
