@@ -2,7 +2,8 @@
     flex: 2;
     -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
     box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
-    padding: 10px;
+    padding: 5px;
+    // height: 40vh;
 
     .top{
         display: flex;
@@ -13,21 +14,22 @@
         .title{
             font-size: 16px;
             font-weight: 500;
+            margin-left: 5px;
+            color: black;
         }
-
     }
 
     .bottom{
-        padding: 20px;
+        // padding: 15px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 15px;
+        // gap: 15px;
 
         .featuredChart{
-            width: 100px;
-            height: 100px;
+            width: 200px;
+            height: 200px;
         }
 
         .title{
@@ -39,41 +41,50 @@
             font-size: 30px;
         }
 
-        .desc{
+        .description{
             font-weight: 300;
             font-size: 12px;
             color: gray;
             text-align: center
         }
 
-        .summary{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+        .summaryHolder{
+            display: inline-block;
 
-            .item{
-                text-align: center;
+            .summary{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                display: inline-block;
+                // padding: 40px;
+                background-color: lightblue;
+                margin-inline: 10px;
 
-                .itemTitle{
-                    font-size: 14px;
-                    color: gray;
-
-                    .itemResult{
-                        display: flex;
-                        align-items: center;
-                        margin-top: 10px;
-                        font-size: 14px;
-
-                        &.positive{
-                            color: green;
-                        }
-
-                        &.negative{
-                            color: red;
+                .item{
+                    text-align: center;
+    
+                    .itemTitle{
+                        font-size: 18px;
+                        color: black;
+    
+                        .itemResult{
+                            display: flex;
+                            align-items: center;
+                            margin-top: 10px;
+                            font-size: 14px;
+    
+                            &.positive{
+                                color: green;
+                            }
+    
+                            &.negative{
+                                color: red;
+                            }
                         }
                     }
                 }
             }
         }
+
     }
 }

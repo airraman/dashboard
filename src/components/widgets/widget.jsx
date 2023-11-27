@@ -5,6 +5,7 @@ import PermIdentityOutlinedIcon from '@mui/icons-material/PermIdentityOutlined';
 import RedeemIcon from '@mui/icons-material/Redeem';
 import PercentIcon from '@mui/icons-material/Percent';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
+import { blue } from '@mui/material/colors';
 
 
 const Widget = ({type}) => {
@@ -30,7 +31,7 @@ const Widget = ({type}) => {
           isMoney:false,
           link: "View all orders",
           icon:(
-            <RedeemIcon className='icon'/>
+            <RedeemIcon className='icon' style={{ backgroundColor: "rgba(0, 128, 0, 0.2)", color: "#ade6bb" }}/>
           )
         }
       break;
@@ -40,7 +41,10 @@ const Widget = ({type}) => {
           isMoney:true,
           link: "View net earings",
           icon:(
-            <AccountBoxIcon className='icon'/>
+            <AccountBoxIcon className='icon'style={{
+              backgroundColor: "rgba(128, 0, 128, 0.2)",
+              color: "#bbade6",
+            }}/>
           )
         }
         break;
@@ -50,7 +54,10 @@ const Widget = ({type}) => {
             isMoney:true,
             link: "See details",
             icon:(
-            <PercentIcon className='icon'/>
+            <PercentIcon className='icon'style={{
+              backgroundColor: "rgba(128, 0, 128, 0.2)",
+              color: "#add8e6",
+            }}/>
             )
             }
       break;
